@@ -43,7 +43,7 @@ public class WhetherFrame extends JFrame {
 			/**
 			 * url.openStream () 字节流，需转换为缓冲字符流
 			 */
-			BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream())) ;	//创建缓冲输入流
+			BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream(),"utf8")) ;	//创建缓冲输入流
 			//StringBuffer 线程安全 StringBuffer 在单线程较快
 			strBuilder = new StringBuilder() ;
 			String str = null ;
